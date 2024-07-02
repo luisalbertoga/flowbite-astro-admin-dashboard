@@ -19,6 +19,7 @@ module.exports = {
 			options: {
 				parser: 'astro',
 				printWidth: 80,
+				bracketSameLine: true,
 			},
 		},
 	],
