@@ -1,48 +1,96 @@
 ---
-const { colSpan } = Astro.props;
+const { colSpan, card1Title, card2Title, card3Title, card4Title } = Astro.props;
+
 ---
+<div class={`items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800 col-span-${colSpan}`}>
+	<div class="w-full">
+		<h3 class="text-base font-normal text-gray-500 dark:text-gray-400">
+			{card1Title}
+		</h3>
+		<span
+			class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white"
+			>2,340</span
+		>
+		<p
+			class="flex items-center text-base font-normal text-gray-500 dark:text-gray-400"
+		>
+			<span
+				class="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400"
+			>
+				
+				3,4%
+			</span>
+			Since last month
+		</p>
+	</div>
+</div>
 
-<div
-	class={`p-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-${colSpan} dark:border-gray-700 sm:p-6 dark:bg-gray-800`}>
-	<dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-4 dark:text-white sm:p-8">
-		
-		<div class="flex flex-col items-center justify-center">
-			<div class="max-w-sm p-6 xl:p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-				<div class="flex flex-col items-center justify-center">
-					<dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-					<dd class="text-gray-500 dark:text-gray-400">Ingreso</dd>
-				</div>
-			</div>
-		</div>
-		
-		<div class="flex flex-col items-center justify-center">
-			<div class="max-w-sm p-6 xl:p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-				<div class="flex flex-col items-center justify-center">
-					<dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-					<dd class="text-gray-500 dark:text-gray-400">Egreso</dd>
-				</div>
-			</div>
-		</div>
 
-		<div class="flex flex-col items-center justify-center">
-			<div class="max-w-sm p-6 xl:p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-				<div class="flex flex-col items-center justify-center">
-					<dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-					<dd class="text-gray-500 dark:text-gray-400">Nomina</dd>
-				</div>
-			</div>
-		</div>
+<div class={`items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800 col-span-${colSpan}`}>
+	<div class="w-full">
+		<h3 class="text-base font-normal text-gray-500 dark:text-gray-400">
+			{card2Title}
+		</h3>
+		<span
+			class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white"
+			>2,340</span
+		>
+		<p
+			class="flex items-center text-base font-normal text-gray-500 dark:text-gray-400"
+		>
+			<span
+				class="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400"
+			>
+			
+				3,4%
+			</span>
+			Since last month
+		</p>
+	</div>
+</div>
 
-		<div class="flex flex-col items-center justify-center">
-			<div class="max-w-sm p-6 xl:p-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-				<div class="flex flex-col items-center justify-center">
-					<dt class="mb-2 text-3xl font-extrabold">100M+</dt>
-					<dd class="text-gray-500 dark:text-gray-400">Neto</dd>
-				</div>
-			</div>
-		</div>
+<div class={`items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800 col-span-${colSpan}`}>
+	<div class="w-full">
+		<h3 class="text-base font-normal text-gray-500 dark:text-gray-400">
+			{card3Title}
+		</h3>
+		<span
+			class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white"
+			>2,340</span
+		>
+		<p
+			class="flex items-center text-base font-normal text-gray-500 dark:text-gray-400"
+		>
+			<span
+				class="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400"
+			>
+				
+				3,4%
+			</span>
+			Since last month
+		</p>
+	</div>
+</div>
 
-	<!-- NOTE: Charts could be extracted to a generic UI component -->
-
-	<!-- Card Footer -->
+<div class={`items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800 col-span-${colSpan}`}>
+	<div class="w-full">
+		<h3 class="text-base font-normal text-gray-500 dark:text-gray-400">
+			{card4Title}
+		</h3>
+		<span
+			class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white"
+			>2,340</span
+		>
+		<p
+			class="flex items-center text-base font-normal text-gray-500 dark:text-gray-400"
+		>
+			<span
+				class="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400"
+			>
+				
+				3,4%
+			</span>
+			Since last month
+		</p>
+	</div>
 </div>
